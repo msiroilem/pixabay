@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Image(image_background, onClick) {
+export default function Image(image_background, onClick) {
   return (
     <div className="card" onClick={onClick}>
       <div className="img-wrapper">
@@ -9,5 +9,3 @@ function Image(image_background, onClick) {
     </div>
   )
 }
-
-export default Image

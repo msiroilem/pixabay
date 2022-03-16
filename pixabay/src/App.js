@@ -3,7 +3,6 @@ import axios from 'axios'
 import './App.css'
 import Image from '../src/components/Image'
 import Search from '../src/components/Search'
-
 import { BASE_URL, CONFIG } from '../src/globals'
 
 export default function App() {
