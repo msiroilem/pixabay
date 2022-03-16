@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Image(image_background, onClick) {
+export default function Image(props) {
   return (
-    <div className="card" onClick={onClick}>
+    <div className="card" onClick={props.onClick}>
       <div className="img-wrapper">
-        <img src={image_background} />
+        <img src={props.image_background} alt="image" />
       </div>
     </div>
   )
