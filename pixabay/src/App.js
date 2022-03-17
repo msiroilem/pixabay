@@ -13,9 +13,7 @@ export default function App() {
 
   useEffect(() => {
     async function getImages() {
-      const res = await axios.get(
-        `https://pixabay.com/api/?key=26164199-3f84acd85f8c05d27705b99b7`
-      )
+      const res = await axios.get(`${BASE_URL}${CONFIG}`)
       setImages(res.data.results)
     }
     getImages()
